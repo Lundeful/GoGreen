@@ -1,35 +1,37 @@
-body{
+body {
+  box-sizing: border-box;
+  background-color: #f0f0f0;
   margin: 0;
   padding: 0;
-  background-color: #f1f1f1;
+  font-family: 'Open Sans', sans-serif;
 }
 
+/*
+--------------------------
+Mobile navbar
+--------------------------
+*/
 .mobileNavBar{
   background-color: #f4f4f4;
-  border-bottom: solid 10px rgba(0,0,0,0.2);
+  border-bottom: solid 0.5em rgba(0,0,0,0.1);
   width: 100%;
-  height: 10em;
 }
 
-#bilde1{
-  width: 30%;
-  height: 30%;
-  margin-top: 2em;
-  margin-left: 3em;
+#bilde1 {
+  height: 2em;
+  margin: 1em;
 }
 
 .hamburgerBoks{
   float: right;
-  margin-right: 3em;
-  margin-top: 2em;
+  margin: 1em;
 }
 
 .hamburgerLine{
-    width: 7em;
-    height: 1em;
-    background-color: black;
-    margin: 0.7em 0;
-    position: relative;
+    width: 2.8em;
+    height: 0.4em;
+    margin-bottom: 0.3em;
+    background-color: #202020;
     border-radius: 15px;
 }
 
@@ -37,5 +39,53 @@ ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+}
+
+/*
+--------------------------
+Informational card section
+--------------------------
+*/
+.infoBox {
+  background-color: #f9f9f9;
+  width: 90%;
+  margin: auto;
+  margin-top: 2em;
+  border-radius: 0.5em;
+  overflow: auto;
+}
+
+.infoBoxTitle {
+  margin: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  float: left;
+  color: #303030;
+  /*
+  border-bottom: solid 0.5em rgba(0,0,0,0.5);
+  border-radius: 0.5em;
+  */
+}
+
+.infoBoxTitle h3 {
+  font-size: 2em;
+  margin: 0.3em;
+}
+
+.infoBoxText {
+  float: right;
+  margin: 1em;
+}
+
+.infoBoxImage {
+  float: left;
+  background-color: #a1a1a1;
+  width: 100%;
+  height: 10em;
+}
+
+#info1 {
+  background-image: url('../media/app1.jpeg');
+  background-size: cover;
+  background-position: center;
 }
