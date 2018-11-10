@@ -34,7 +34,7 @@ Mobile navbar
     width: 2.3em;
     height: 0.45em;
     margin-bottom: 0.3em;
-    background-color: #7ac043;
+    background-color: #76b981;
     border-radius: 15px;
 }
 
@@ -49,14 +49,25 @@ ul{
 Informational card section
 --------------------------
 */
+
+.infoBoxSection {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1440px;
+  margin: auto;
+}
+
 .infoBox {
   background-color: #f9f9f9;
-  width: 90%;
   margin: auto;
-  margin-top: 2em;
+  margin: 2em;
   border-radius: 0.5em;
   overflow: auto;
   color: #333;
+  max-width: 25em;
+  min-width: 18em;
 }
 
 .infoBoxTitle {
@@ -93,5 +104,19 @@ Informational card section
   background-image: url('../media/connectWithFriends.jpg');
   background-size: cover;
   background-position: bottom;
+}
 
+/*
+--------------------------
+For laptop-sized screens
+--------------------------
+*/
+@media screen and (min-width: 1400px) {
+  .hamburgerBoks {
+    visibility: hidden;
+  }
+
+  #logo {
+    margin-left: 7em;
+  }
 }

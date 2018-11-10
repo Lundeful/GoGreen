@@ -1,5 +1,18 @@
+Infobokser:
+
+# Know your accomplishments
+See the actual impact your lifestyle changes have on the world. 
+
+# Track your journey
+Detailed statistics give you a visual representation of your progress so far
+
 # Connect with friends
 Add your friends and help each other lower your carbon footprint. You can compare stats and compete to see who's doing best
+
+# Set your goals
+Motivate yourself to do better by setting achieveable goals with different timeframes.
+
+
 
 
 # HEX-codes
