@@ -29,13 +29,20 @@
   <body>
     <div class="mobileNavBar">
        <ul>
-        <li class="hamburgerBoks">
+         <li class="hamburgerBoks" onclick="openNav()">
           <div class="hamburgerLine"></div>
           <div class="hamburgerLine"></div>
           <div class="hamburgerLine"></div>
         </li>
         <li><img id="logo" src="media/gogreen.png"></li>
       </ul>
+      <div id="navJS" class="nav">
+        <a href="javascript:void(0)" id="closeBTN" onclick="closeNav()">&times;</a>
+        <a href="#">Valg 1</a>
+        <a href="#">Valg 2</a>
+        <a href="#">Valg 3</a>
+        <a href="#">Valg 4</a>
+      </div>
     </div>
     <div class="infoBoxSection">
 
@@ -74,6 +81,14 @@
            clone zone shopper success mustachioed brigadier Semi beard ian rush man of the year 1986 I drink your milkshake ron burgundy. </p>
       </div>
     </div>
+    <script>
+      function openNav() {
+        document.getElementById("navJS").style.width = "100%";
+      }
 
+      function closeNav() {
+        document.getElementById("navJS").style.width = "0";
+      }
+    </script>
   </body>
 </html>

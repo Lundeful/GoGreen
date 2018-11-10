@@ -34,8 +34,58 @@ Mobile navbar
     width: 2.3em;
     height: 0.45em;
     margin-bottom: 0.3em;
+<<<<<<< Updated upstream
     background-color: #76b981;
+=======
+    background-color: #359b3c;
+>>>>>>> Stashed changes
     border-radius: 15px;
+}
+
+.nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 7em;
+}
+
+.nav a{
+    padding: 0.5em;
+    text-decoration: none;
+    font-size: 50px;
+    color: #333;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.nav a:hover{
+    color: #fff;
+    background-color: #359b3c;
+
+}
+
+#closeBTN {
+    position: absolute;
+    top: -0.4em;
+    right: 0.05em;
+    font-size: 50px;
+}
+
+
+.burgern{
+    position: relative;
+    float: right;
+    margin-right: 1.5em;
+    margin-top:  1.5em;
+    font-size: 2.3em;
+    cursor: pointer;
 }
 
 ul{
