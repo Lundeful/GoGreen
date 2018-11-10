@@ -39,12 +39,22 @@
       <div id="navJS" class="nav">
         <a href="javascript:void(0)" id="closeBTN" onclick="closeNav()">&times;</a>
         <div class="hoverFarge">
-        <a href="#">Valg 1</a>
-        <a href="#">Valg 2</a>
-        <a href="#">Valg 3</a>
-        <a href="#top"onclick="closeNav()">Top &uarr;</a>
+          <a href="#">Valg 1</a>
+          <a href="#">Valg 2</a>
+          <a href="#">Valg 3</a>
+          <a href="#top"onclick="closeNav()">Top &uarr;</a>
+        </div>
       </div>
+    </div>
+    <div class="heroSection">
+      <div class="heroImage">
+        <img class="heroImage" src="media/mate20.png">
       </div>
+      <p class="heroText"> This right here is some fucking awesome text about our app</p>
+      <ul class="storeLinks">
+        <li><a href="https://play.google.com/store/apps"><img src="media/playstore.png"/></a></li>
+        <li><a href="https://www.apple.com/ios/app-store/"><img src="media/appstore.png"/></a></li>
+      </ul>
     </div>
     <div class="infoBoxSection">
 
@@ -90,12 +100,10 @@
         </div>
       </div>
     </div>
-
     <script>
       function openNav() {
         document.getElementById("navJS").style.width = "100%";
       }
-
       function closeNav() {
         document.getElementById("navJS").style.width = "0";
       }
