@@ -27,7 +27,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div class="mobileNavBar">
+    <div class="mobileNavBar" id="top">
        <ul>
          <li class="hamburgerBoks" onclick="openNav()">
           <div class="hamburgerLine"></div>
@@ -38,10 +38,12 @@
       </ul>
       <div id="navJS" class="nav">
         <a href="javascript:void(0)" id="closeBTN" onclick="closeNav()">&times;</a>
+        <div class="hoverFarge">
         <a href="#">Valg 1</a>
         <a href="#">Valg 2</a>
         <a href="#">Valg 3</a>
-        <a href="#">Valg 4</a>
+        <a href="#top"onclick="closeNav()">Top &uarr;</a>
+      </div>
       </div>
     </div>
     <div class="infoBoxSection">
