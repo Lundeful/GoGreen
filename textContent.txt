@@ -1,0 +1,18 @@
+# Connect with friends
+Add your friends and help each other lower your carbon footprint. You can compare stats and compete to see who's doing best
+
+
+# HEX-codes
+
+Logo:
+Lyse-grønn #7ac043
+Mørke-grønn #007e37
+
+Nav:
+Hvit: #f9f9f9
+mindre hvit: #f4f4f4
+
+
+norge.no: 
+Grønn #d1e6c4
+Grå #555555
