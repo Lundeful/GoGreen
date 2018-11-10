@@ -166,3 +166,55 @@ For laptop-sized screens
     margin-left: 7em;
   }
 }
+
+.buttomLine{
+
+  position: relative;
+      left: 0;
+      bottom: 0;
+z-index: -100;
+      width: 100%;
+      background-color: grey;
+      text-align: center;
+}
+
+.buttomLine:after{
+  transform-origin: top left;
+  transform: skewY(-3deg);
+}
+
+
+
+.boksKnapp{
+  transform: skewY(3deg);
+}
+
+/*.bottomLineUnder{
+  margin-top: 3em;
+  background-color: grey;
+  left: 0;
+  bottom: 0;
+  height: 6em;
+  width: 100%;
+} */
+
+.boksKnapp{
+  margin: 0.5em;
+  text-align: center;
+  text-decoration-style: solid;
+  font-weight: bolder;
+
+}
+
+#tekstØverst{
+  color: white;
+font-size: 17px;
+  text-decoration: none;
+  position: center;
+  font-weight: bolder;
+
+}
+   .boksKnapp:hover {
+      color: #359b3c;
+      text-decoration: none;
+   }
