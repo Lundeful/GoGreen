@@ -27,7 +27,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div class="mobileNavBar" id="top">
+    <div class="NavBar" id="top">
        <ul>
          <li class="hamburgerBoks" onclick="openNav()">
           <div class="hamburgerLine"></div>
@@ -35,6 +35,10 @@
           <div class="hamburgerLine"></div>
         </li>
         <li><img id="logo" src="media/gogreen.png"></li>
+          <li class="PCNavBar"><a href="#">Valg 1</a></li>
+          <li class="PCNavBar"><a href="#">Valg 2</a></li>
+          <li class="PCNavBar"><a href="#">Valg 3</a></li>
+          <li class="PCNavBar"><a href="#">Valg 4</a></li>
       </ul>
       <div id="navJS" class="nav">
         <a href="javascript:void(0)" id="closeBTN" onclick="closeNav()">&times;</a>
@@ -42,7 +46,7 @@
           <a href="#">Valg 1</a>
           <a href="#">Valg 2</a>
           <a href="#">Valg 3</a>
-          <a href="#top"onclick="closeNav()">Top &uarr;</a>
+          <a href="#top" onclick="closeNav()" id="topKnapp">Top &uarr;</a>
         </div>
       </div>
     </div>

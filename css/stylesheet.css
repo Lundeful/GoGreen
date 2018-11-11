@@ -9,20 +9,50 @@ body {
 
 /*
 --------------------------
-Mobile navbar
+Navbar
 --------------------------
 */
-.mobileNavBar{
+.NavBar {
   background-color: #f9f9f9;
   border-bottom: solid 0.2em rgba(0,0,0,0.08);
   width: 100%;
-  display: block;
+  max-height: 5em;
 }
+.NavBar ul{
+  overflow: hidden;
+  max-width: 75%;
+  margin: auto;
+}
+
+.NavBar li{
+  display: inline-block;
+}
+
+.PCNavBar {
+  visibility: hidden;
+  height: 100%;
+  float: right;
+  justify-content: center;
+  padding: 1em;
+}
+
+.PCNavBar a{
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none;
+  color: #359b3c;
+}
+
+
+.PCNavBar a:hover{
+  border-bottom: solid 0.1em #333;
+  transition: 0.2s;
+}
+
 
 #logo {
   height: 3.5em;
   margin: 0.6em;
-  margin-left: 1.5em;
 }
 
 .hamburgerBoks{
@@ -45,26 +75,26 @@ Mobile navbar
 }
 
 .nav{
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #f9f9f9;
-    overflow-x: hidden;
-    transition: 0.2s;
-    padding-top: 7em;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+  transition: 0.2s;
+  padding-top: 7em;
 }
 
 .nav a{
-    padding: 0.5em;
-    text-decoration: none;
-    font-size: 50px;
-    color: #333;
-    display: block;
-    transition: 0.2s;
-    text-align: center;
+  padding: 0.5em;
+  text-decoration: none;
+  font-size: 50px;
+  color: #333;
+  display: block;
+  transition: 0.2s;
+  text-align: center;
 }
 
 .hoverFarge a:hover{
@@ -214,6 +244,10 @@ For laptop-sized screens
     visibility: hidden;
   }
 
+  .PCNavBar {
+    visibility: visible;
+  }
+
   #logo {
     margin-left: 7em;
   }
@@ -222,12 +256,12 @@ For laptop-sized screens
 .buttomLine{
 
   position: relative;
-      left: 0;
-      bottom: 0;
-z-index: -100;
-      width: 100%;
-      background-color: grey;
-      text-align: center;
+  left: 0;
+  bottom: 0;
+  z-index: -100;
+  width: 100%;
+  background-color: grey;
+  text-align: center;
 }
 
 .buttomLine:after{
@@ -259,7 +293,7 @@ z-index: -100;
 
 #tekstØverst{
   color: white;
-font-size: 17px;
+  font-size: 17px;
   text-decoration: none;
   position: center;
   font-weight: bolder;
@@ -267,6 +301,6 @@ font-size: 17px;
 }
 
 .boksKnapp:hover {
-      color: #359b3c;
-      text-decoration: none;
+  color: #359b3c;
+  text-decoration: none;
  }
