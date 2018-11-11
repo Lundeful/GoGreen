@@ -137,6 +137,17 @@ Introduction to app with hero shot and links to app download
   overflow: hidden;
 }
 
+.heroSection h2 {
+  border-radius: 0.3em;
+  color: #303030;
+  font-size: 3em;
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
+  margin: auto;
+  max-width: 15em;
+}
+
 .heroImage {
   width: 10em;
   margin: auto;
@@ -150,10 +161,6 @@ Introduction to app with hero shot and links to app download
   font-size: 1.2em;
   border-radius: 1em 0 1em 0;
   margin: 2em;
-
-  /* margin: auto;
-  margin-top: 2em;
-  margin-bottom: 2em; */
 }
 
 .storeLinks  {
@@ -183,7 +190,7 @@ Informational card section
   flex-flow: row wrap;
   justify-content: center;
   align-items: stretch;
-  max-width: 1440px;
+  max-width: 90em;
   margin: auto;
 }
 
@@ -236,9 +243,65 @@ Informational card section
 
 /*
 --------------------------
-For laptop-sized screens
+WALL OF TEXT section
 --------------------------
 */
+
+.sectionSeparator {
+}
+
+.wallOfText {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+}
+
+.wallOfText p {
+  margin: 1.5em;
+  max-width: 20em;
+}
+
+.wallOfTextImage {
+  margin: 1.5em;
+  width: 15em;
+  height: 15em;
+  background-color: #17BEBB;
+}
+
+#WOTI1 {
+
+}
+
+#WOTI2 {
+
+}
+
+#WOTI3 {
+
+}
+
+
+
+#WOT1 {
+  background-color: #E8F4E9;
+}
+
+#WOT2 {
+  background-color: #FFF8F2;
+}
+
+#WOT3 {
+  background-color: #E3E9EF;
+  border-bottom: solid 0.2em rgba(0,0,0,0.08);
+}
+/*
+--------------------------
+MEDIA QUERY BREAK SECTION
+--------------------------
+*/
+
+/* For laptop-sized screens. Swaps menus */
 @media screen and (min-width: 1400px) {
   .hamburgerBoks {
     visibility: hidden;
@@ -253,8 +316,13 @@ For laptop-sized screens
   }
 }
 
-.buttomLine{
+/*
+--------------------------
+FOOTER
+--------------------------
+*/
 
+.buttomLine{
   position: relative;
   left: 0;
   bottom: 0;
