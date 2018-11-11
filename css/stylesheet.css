@@ -115,10 +115,15 @@ Introduction to app with hero shot and links to app download
 
 .heroText {
   background-color: #f9f9f9;
+  text-align: center;
   padding: 1em;
   font-size: 1.2em;
   border-radius: 1em 0 1em 0;
   margin: 2em;
+
+  /* margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em; */
 }
 
 .storeLinks  {
