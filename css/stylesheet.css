@@ -322,53 +322,56 @@ FOOTER
 --------------------------
 */
 
-.buttomLine{
-  position: relative;
-  left: 0;
-  bottom: 0;
+.storBunnBoks{
+  margin-top: 2em;
+  height: 10em;
+  background-color: white;
+  width: 100%;
   z-index: -100;
+  bottom:0;
+}
+
+.miniBunnBoks{
+  height:8em;
   width: 100%;
-  background-color: grey;
-  text-align: center;
+  background-color: white;
 }
 
-.buttomLine:after{
-  transform-origin: top left;
-  transform: skewY(-3deg);
+.miniBunnBoks ul{
+  color: #333;
+  margin-left: 1.2em;
+  margin-top: 0.6em;
+  font-size: 13px;
 }
 
-
-.boksKnapp{
-  transform: skewY(3deg);
-}
-
-/*.bottomLineUnder{
-  margin-top: 3em;
-  background-color: grey;
-  left: 0;
-  bottom: 0;
-  height: 6em;
-  width: 100%;
-} */
-
-.boksKnapp{
-  margin: 0.5em;
-  text-align: center;
-  text-decoration-style: solid;
-  font-weight: bolder;
-
-}
-
-#tekstØverst{
-  color: white;
-  font-size: 17px;
-  text-decoration: none;
-  position: center;
-  font-weight: bolder;
-
-}
-
-.boksKnapp:hover {
+#pil{
   color: #359b3c;
+  font-weight: bolder;
+  margin-left: 11.82em;
+
+
+}
+.bunnTekstØverst{
+  color: #359b3c;
+font-size: 14px;
+  font-weight: bolder;
+}
+
+.bunnTekstØverst a{
   text-decoration: none;
- }
+  color:#359b3c;
+}
+   .bunnTekstØverst:hover {
+      color: grey;
+      text-decoration: none;
+   }
+
+.kontaktOssBoks{
+  width: 5em;
+  font-size: 17px;
+  text-align: left;
+    margin-top: 0.7em;
+  margin-left: 1em;
+  margin-right: 1em;
+  border-bottom: solid #333 0.12em;
+}
