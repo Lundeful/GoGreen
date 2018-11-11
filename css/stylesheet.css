@@ -13,6 +13,7 @@ Navbar
 --------------------------
 */
 .NavBar {
+
   background-color: #f9f9f9;
   border-bottom: solid 0.2em rgba(0,0,0,0.08);
   width: 100%;
@@ -20,7 +21,7 @@ Navbar
 }
 .NavBar ul{
   overflow: hidden;
-  max-width: 75%;
+  max-width: 80%;
   margin: auto;
 }
 
@@ -34,6 +35,7 @@ Navbar
   float: right;
   justify-content: center;
   padding: 1em;
+  border-bottom: solid 0.1em );
 }
 
 .PCNavBar a{
@@ -44,7 +46,8 @@ Navbar
 }
 
 
-.PCNavBar a:hover{
+.PCNavBar:hover{
+  overflow: hidden;
   border-bottom: solid 0.1em #333;
   transition: 0.2s;
 }
@@ -52,7 +55,7 @@ Navbar
 
 #logo {
   height: 3.5em;
-  margin: 0.6em;
+  margin-top: 0.6em;
 }
 
 .hamburgerBoks{
@@ -151,7 +154,6 @@ Introduction to app with hero shot and links to app download
 .heroImage {
   width: 10em;
   margin: auto;
-  margin-top: 2em;
 }
 
 .heroText {
@@ -160,6 +162,7 @@ Introduction to app with hero shot and links to app download
   padding: 1em;
   font-size: 1.2em;
   border-radius: 1em 0 1em 0;
+  /* border-radius: 1em; */
   margin: 2em;
 }
 
@@ -293,14 +296,20 @@ WALL OF TEXT section
 
 #WOT3 {
   background-color: #E3E9EF;
-  border-bottom: solid 0.2em rgba(0,0,0,0.08);
 }
 /*
 --------------------------
 MEDIA QUERY BREAK SECTION
 --------------------------
 */
+@media screen and (min-width: 42em) {
+  .heroText {
+    width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+}
 /* For laptop-sized screens. Swaps menus */
 @media screen and (min-width: 1400px) {
   .hamburgerBoks {
@@ -314,6 +323,12 @@ MEDIA QUERY BREAK SECTION
   #logo {
     margin-left: 7em;
   }
+
+  .heroText {
+    max-width: 35em;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*
@@ -322,56 +337,47 @@ FOOTER
 --------------------------
 */
 
-.storBunnBoks{
-  margin-top: 2em;
-  height: 10em;
-  background-color: white;
-  width: 100%;
-  z-index: -100;
-  bottom:0;
+.footer{
+  background-color: #f9f9f9;
+  overflow: hidden;
 }
 
-.miniBunnBoks{
-  height:8em;
-  width: 100%;
-  background-color: white;
-}
-
-.miniBunnBoks ul{
+.contactInfo {
   color: #333;
-  margin-left: 1.2em;
-  margin-top: 0.6em;
-  font-size: 13px;
+  margin-left: 1em;
+  font-size: 1em;
+  margin-bottom: 2em;
+  font-size: 1em,
 }
 
-#pil{
+#pil {
+  display: inline-block;
   color: #359b3c;
   font-weight: bolder;
-  margin-left: 11.82em;
-
-
+  margin-left: 50%;
+  margin-top: 1em;
 }
-.bunnTekstØverst{
-  color: #359b3c;
-font-size: 14px;
+
+.footerContent {
+  max-width: 90em;
+  margin: auto;
+}
+
+.footerLinkText{
+  font-size: 1em;
+  text-align: center;
   font-weight: bolder;
 }
 
-.bunnTekstØverst a{
+.footer a {
   text-decoration: none;
   color:#359b3c;
 }
-   .bunnTekstØverst:hover {
-      color: grey;
-      text-decoration: none;
-   }
 
 .kontaktOssBoks{
-  width: 5em;
-  font-size: 17px;
-  text-align: left;
-    margin-top: 0.7em;
-  margin-left: 1em;
-  margin-right: 1em;
-  border-bottom: solid #333 0.12em;
+    text-align: left;
+    width: 5em;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    border-bottom: solid #333 0.12em;
 }
