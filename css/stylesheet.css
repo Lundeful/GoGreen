@@ -162,7 +162,6 @@ Introduction to app with hero shot and links to app download
   padding: 1em;
   font-size: 1.2em;
   border-radius: 1em 0 1em 0;
-  /* border-radius: 1em; */
   margin: 2em;
 }
 
@@ -180,6 +179,73 @@ Introduction to app with hero shot and links to app download
 
 .storeLinks img {
   width: 10em;
+}
+
+/*
+--------------------------
+WALL OF TEXT section
+--------------------------
+*/
+
+.wallOfText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+.mellomOverskrift {
+  text-align: left;
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.wallOfText p {
+  margin: 1.5em;
+  max-width: 25em;
+}
+
+.wallOfTextImage {
+  margin: 1.5em;
+  width: 20em;
+  height: 20em;
+  background-color: #17BEBB;
+}
+
+#WOTI1 {
+  background-image: url('../media/stockphoto.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+#WOTI2 {
+  background-image: url('../media/stockphoto.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+#WOTI3 {
+  background-image: url('../media/stockphoto.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+#WOT1 {
+  background-color: #E8F4E9;
+}
+
+#WOT2 {
+  background-color: #FFF8F2;
+}
+
+#WOT3 {
+  background-color: #E3E9EF;
 }
 
 /*
@@ -246,65 +312,6 @@ Informational card section
 
 /*
 --------------------------
-WALL OF TEXT section
---------------------------
-*/
-
-.wallOfText {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-flow: wrap-reverse;
-}
-
-.wallOfText p {
-  margin: 1.5em;
-  max-width: 25em;
-}
-
-.wallOfTextImage {
-  margin: 1.5em;
-  width: 15em;
-  height: 15em;
-  background-color: #17BEBB;
-}
-
-#WOTI1 {
-  background-image: url('../media/stockphoto.jpg');
-  background-size: cover;
-  background-position: center;
-
-}
-
-#WOTI2 {
-  background-image: url('../media/stockphoto.jpg');
-  background-size: cover;
-  background-position: center;
-
-}
-
-#WOTI3 {
-  background-image: url('../media/stockphoto.jpg');
-  background-size: cover;
-  background-position: center;
-
-}
-
-
-
-#WOT1 {
-  background-color: #E8F4E9;
-}
-
-#WOT2 {
-  background-color: #FFF8F2;
-}
-
-#WOT3 {
-  background-color: #E3E9EF;
-}
-/*
---------------------------
 MEDIA QUERY BREAK SECTION
 --------------------------
 */
@@ -314,8 +321,39 @@ MEDIA QUERY BREAK SECTION
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+/* Wall of text section for bigger screens */
+@media screen and (min-width: 736px) {
+
+  .wallOfText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+  }
+
+  .mellomOverskrift {
+    display: block;
+    text-align: left;
+    font-size: 1.7em;
+    margin-bottom: 0.3em;
+  }
+
+  .wallOfText p {
+    margin: 1.5em;
+    max-width: 25em;
+  }
+
+  .wallOfTextImage {
+    margin: 1.5em;
+    width: 20em;
+    height: 20em;
+    background-color: #17BEBB;
+  }
 
 }
+
 /* For laptop-sized screens. Swaps menus */
 @media screen and (min-width: 1400px) {
   .hamburgerBoks {
