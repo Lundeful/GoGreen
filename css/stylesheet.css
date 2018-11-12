@@ -46,7 +46,7 @@ Navbar
 }
 
 
-.PCNavBar:hover{
+.PCNavBar a:hover{
   overflow: hidden;
   border-bottom: solid 0.1em #333;
   transition: 0.2s;
@@ -91,9 +91,9 @@ Navbar
 }
 
 .nav a{
-  padding: 0.5em;
+  padding: 0.3em;
   text-decoration: none;
-  font-size: 50px;
+  font-size: 3em;
   color: #333;
   display: block;
   transition: 0.2s;
@@ -188,7 +188,7 @@ Informational card section
 --------------------------
 */
 
-.infoBoxSection {
+#infoBoxSection {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -273,15 +273,22 @@ WALL OF TEXT section
 }
 
 #WOTI1 {
+  background-image: url('../media/stockphoto.jpg');
+  background-size: cover;
+  background-position: center;
 
 }
 
 #WOTI2 {
-
+  background-image: url('../media/stockphoto.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 #WOTI3 {
-
+  background-image: url('../media/stockphoto.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -342,7 +349,7 @@ FOOTER
   overflow: hidden;
 }
 
-.contactInfo {
+#contactInfo {
   color: #333;
   margin-left: 1em;
   font-size: 1em;
