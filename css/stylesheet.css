@@ -143,10 +143,10 @@ Introduction to app with hero shot and links to app download
 .heroSection h2 {
   border-radius: 0.3em;
   color: #303030;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
-  padding: 1em;
-  margin: 1em;
+  padding: 0.3em;
+  margin: 1.5em;
   margin: auto;
   max-width: 15em;
 }
@@ -167,6 +167,7 @@ Introduction to app with hero shot and links to app download
 
 .storeLinks  {
   display: flex;
+  flex-flow: wrap;
   justify-content: center;
   align-items: center;
   padding: 0;
