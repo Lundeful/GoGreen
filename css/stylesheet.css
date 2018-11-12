@@ -250,19 +250,16 @@ WALL OF TEXT section
 --------------------------
 */
 
-.sectionSeparator {
-}
-
 .wallOfText {
   display: flex;
   justify-content: center;
-  align-items: stretch;
-  width: 100%;
+  align-items: flex-end;
+  flex-flow: wrap-reverse;
 }
 
 .wallOfText p {
   margin: 1.5em;
-  max-width: 20em;
+  max-width: 25em;
 }
 
 .wallOfTextImage {
@@ -283,12 +280,14 @@ WALL OF TEXT section
   background-image: url('../media/stockphoto.jpg');
   background-size: cover;
   background-position: center;
+
 }
 
 #WOTI3 {
   background-image: url('../media/stockphoto.jpg');
   background-size: cover;
   background-position: center;
+
 }
 
 
