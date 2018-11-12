@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
   <head>
+    <title>Go Green - The app that helps you save the world</title>
+
     <!-- FAVICON | Maybe remove -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -23,6 +25,7 @@
 
     <link href="css/stylesheet.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta charset="UTF-8">
     <meta name="author" content="Christoffer Lund, Magnus Kragseth, Silje Viko">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -35,32 +38,49 @@
           <div class="hamburgerLine"></div>
         </li>
         <li><img id="logo" src="media/gogreen.png"></li>
-          <li class="PCNavBar"><a href="#">Valg 1</a></li>
-          <li class="PCNavBar"><a href="#">Valg 2</a></li>
-          <li class="PCNavBar"><a href="#">Valg 3</a></li>
-          <li class="PCNavBar"><a href="#">Valg 4</a></li>
+          <li class="PCNavBar"><a href="#contactInfo">Contact us</a></li>
+          <li class="PCNavBar"><a href="#infoBoxSection">Features</a></li>
+          <li class="PCNavBar"><a href="#WOT1">Learn More</a></li>
+          <li class="PCNavBar"><a href="#downloadApp">Download App</a></li>
       </ul>
       <div id="navJS" class="nav">
         <a href="javascript:void(0)" id="closeBTN" onclick="closeNav()">&times;</a>
         <div class="hoverFarge">
-          <a href="#">Valg 1</a>
-          <a href="#">Valg 2</a>
-          <a href="#">Valg 3</a>
+          <a href="#downloadApp">Download App</a>
+          <a href="#WOT1">Learn More</a>
+          <a href="#infoBoxSection">Features</a>
+          <a href="#contactInfo">Contact us</a>
           <a href="#top" onclick="closeNav()" id="topKnapp">Top &uarr;</a>
         </div>
       </div>
     </div>
+<!-- HERO IMAGE -->
     <div class="heroSection">
+      <h2> This tagline introduces our app, eventually</h2>
       <div class="heroImage">
         <img class="heroImage" src="media/mate20.png">
       </div>
-      <p class="heroText"> This right here is some fucking awesome text about our app</p>
-      <ul class="storeLinks">
+      <p class="heroText"> This right here is some fucking awesome quick information about our app and what it does. Or it will be. Soon.</p>
+      <ul class="storeLinks" id="downloadApp">
         <li><a href="https://play.google.com/store/apps"><img src="media/playstore.png"/></a></li>
         <li><a href="https://www.apple.com/ios/app-store/"><img src="media/appstore.png"/></a></li>
       </ul>
     </div>
-    <div class="infoBoxSection">
+<!-- THE IN-DEPTH INFO SECTION -->
+    <div class="wallOfText" id="WOT1">
+      <p><span class="mellomOverskrift">Why did we create this app</span>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
+      <div class="wallOfTextImage" id="WOTI1"></div>
+    </div>
+    <div class="wallOfText" id="WOT2">
+      <p><span class="mellomOverskrift">How does it help</span>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
+      <div class="wallOfTextImage" id="WOTI2"></div>
+    </div>
+    <div class="wallOfText" id="WOT3">
+      <p><span class="mellomOverskrift">Another headline here</span>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
+      <div class="wallOfTextImage" id="WOTI3"></div>
+    </div>
+<!-- INFOBOXES -->
+    <div id="infoBoxSection">
 
       <div class="infoBox">
         <div class="infoBoxTitle"> <h3>Know your results </h3> </div>
@@ -97,13 +117,25 @@
            clone zone shopper success mustachioed brigadier Semi beard ian rush man of the year 1986 I drink your milkshake ron burgundy. </p>
       </div>
     </div>
-    <div class="bottomLineUnder">
-      <div class="buttomLine">
-        <div class="boksKnapp" style="text-align: center;">
-            <a id="tekstØverst" href="#top">Øverst &#8593; </a>
+<!-- FOOTER -->
+    <div class="footer">
+      <div class="footerContent">
+        <a id="pil" href="#top"> &#8593; </a>
+        <div class="footerLinkText">
+          <a href="#top">To the top</a>
+          <div class="kontaktOssBoks">
+            <a>Contact us</a>
+          </div>
         </div>
-      </div>
+        <ul id="contactInfo">
+          <li> OsloMet – storbyuniversitetet</li>
+          <li> Postboks 4, St. Olavs plass</li>
+          <li> 0130 Oslo</li>
+        </ul>
+        <d
     </div>
+
+<!-- JAVASCRIPT -->
     <script>
       function openNav() {
         document.getElementById("navJS").style.width = "100%";

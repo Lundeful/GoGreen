@@ -13,6 +13,7 @@ Navbar
 --------------------------
 */
 .NavBar {
+
   background-color: #f9f9f9;
   border-bottom: solid 0.2em rgba(0,0,0,0.08);
   width: 100%;
@@ -20,7 +21,7 @@ Navbar
 }
 .NavBar ul{
   overflow: hidden;
-  max-width: 75%;
+  max-width: 80%;
   margin: auto;
 }
 
@@ -34,6 +35,7 @@ Navbar
   float: right;
   justify-content: center;
   padding: 1em;
+  border-bottom: solid 0.1em );
 }
 
 .PCNavBar a{
@@ -45,6 +47,7 @@ Navbar
 
 
 .PCNavBar a:hover{
+  overflow: hidden;
   border-bottom: solid 0.1em #333;
   transition: 0.2s;
 }
@@ -52,7 +55,7 @@ Navbar
 
 #logo {
   height: 3.5em;
-  margin: 0.6em;
+  margin-top: 0.6em;
 }
 
 .hamburgerBoks{
@@ -88,9 +91,9 @@ Navbar
 }
 
 .nav a{
-  padding: 0.5em;
+  padding: 0.3em;
   text-decoration: none;
-  font-size: 50px;
+  font-size: 3em;
   color: #333;
   display: block;
   transition: 0.2s;
@@ -137,10 +140,20 @@ Introduction to app with hero shot and links to app download
   overflow: hidden;
 }
 
+.heroSection h2 {
+  border-radius: 0.3em;
+  color: #303030;
+  font-size: 3em;
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
+  margin: auto;
+  max-width: 15em;
+}
+
 .heroImage {
   width: 10em;
   margin: auto;
-  margin-top: 2em;
 }
 
 .heroText {
@@ -150,10 +163,6 @@ Introduction to app with hero shot and links to app download
   font-size: 1.2em;
   border-radius: 1em 0 1em 0;
   margin: 2em;
-
-  /* margin: auto;
-  margin-top: 2em;
-  margin-bottom: 2em; */
 }
 
 .storeLinks  {
@@ -174,16 +183,83 @@ Introduction to app with hero shot and links to app download
 
 /*
 --------------------------
+WALL OF TEXT section
+--------------------------
+*/
+
+.wallOfText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+.mellomOverskrift {
+  text-align: left;
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.wallOfText p {
+  margin: 1.5em;
+  max-width: 25em;
+}
+
+.wallOfTextImage {
+  margin: 1.5em;
+  width: 20em;
+  height: 20em;
+  background-color: #17BEBB;
+}
+
+#WOTI1 {
+  background-image: url('../media/stockphoto.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+#WOTI2 {
+  background-image: url('../media/stockphoto.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+#WOTI3 {
+  background-image: url('../media/stockphoto.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+#WOT1 {
+  background-color: #E8F4E9;
+}
+
+#WOT2 {
+  background-color: #FFF8F2;
+}
+
+#WOT3 {
+  background-color: #E3E9EF;
+}
+
+/*
+--------------------------
 Informational card section
 --------------------------
 */
 
-.infoBoxSection {
+#infoBoxSection {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: stretch;
-  max-width: 1440px;
+  max-width: 90em;
   margin: auto;
 }
 
@@ -236,9 +312,49 @@ Informational card section
 
 /*
 --------------------------
-For laptop-sized screens
+MEDIA QUERY BREAK SECTION
 --------------------------
 */
+@media screen and (min-width: 42em) {
+  .heroText {
+    width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Wall of text section for bigger screens */
+@media screen and (min-width: 736px) {
+
+  .wallOfText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+  }
+
+  .mellomOverskrift {
+    display: block;
+    text-align: left;
+    font-size: 1.7em;
+    margin-bottom: 0.3em;
+  }
+
+  .wallOfText p {
+    margin: 1.5em;
+    max-width: 25em;
+  }
+
+  .wallOfTextImage {
+    margin: 1.5em;
+    width: 20em;
+    height: 20em;
+    background-color: #17BEBB;
+  }
+
+}
+
+/* For laptop-sized screens. Swaps menus */
 @media screen and (min-width: 1400px) {
   .hamburgerBoks {
     visibility: hidden;
@@ -251,56 +367,61 @@ For laptop-sized screens
   #logo {
     margin-left: 7em;
   }
+
+  .heroText {
+    max-width: 35em;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.buttomLine{
+/*
+--------------------------
+FOOTER
+--------------------------
+*/
 
-  position: relative;
-  left: 0;
-  bottom: 0;
-  z-index: -100;
-  width: 100%;
-  background-color: grey;
-  text-align: center;
+.footer{
+  background-color: #f9f9f9;
+  overflow: hidden;
 }
 
-.buttomLine:after{
-  transform-origin: top left;
-  transform: skewY(-3deg);
+#contactInfo {
+  color: #333;
+  margin-left: 1em;
+  font-size: 1em;
+  margin-bottom: 2em;
+  font-size: 1em,
 }
 
-
-.boksKnapp{
-  transform: skewY(3deg);
-}
-
-/*.bottomLineUnder{
-  margin-top: 3em;
-  background-color: grey;
-  left: 0;
-  bottom: 0;
-  height: 6em;
-  width: 100%;
-} */
-
-.boksKnapp{
-  margin: 0.5em;
-  text-align: center;
-  text-decoration-style: solid;
-  font-weight: bolder;
-
-}
-
-#tekstØverst{
-  color: white;
-  font-size: 17px;
-  text-decoration: none;
-  position: center;
-  font-weight: bolder;
-
-}
-
-.boksKnapp:hover {
+#pil {
+  display: inline-block;
   color: #359b3c;
+  font-weight: bolder;
+  margin-left: 50%;
+  margin-top: 1em;
+}
+
+.footerContent {
+  max-width: 90em;
+  margin: auto;
+}
+
+.footerLinkText{
+  font-size: 1em;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.footer a {
   text-decoration: none;
- }
+  color:#359b3c;
+}
+
+.kontaktOssBoks{
+    text-align: left;
+    width: 5em;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    border-bottom: solid #333 0.12em;
+}
