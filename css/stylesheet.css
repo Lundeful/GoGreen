@@ -195,7 +195,7 @@ WALL OF TEXT section
 }
 
 .mellomOverskrift {
-  text-align: left;
+  text-align: center;
   display: block;
   font-size: 1.5em;
   margin-bottom: 1em;
@@ -324,34 +324,12 @@ MEDIA QUERY BREAK SECTION
 }
 
 /* Wall of text section for bigger screens */
-@media screen and (min-width: 736px) {
-
-  .wallOfText {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: wrap;
-  }
+@media screen and (min-width: 800px) {
 
   .mellomOverskrift {
-    display: block;
     text-align: left;
     font-size: 1.7em;
-    margin-bottom: 0.3em;
   }
-
-  .wallOfText p {
-    margin: 1.5em;
-    max-width: 25em;
-  }
-
-  .wallOfTextImage {
-    margin: 1.5em;
-    width: 20em;
-    height: 20em;
-    background-color: #17BEBB;
-  }
-
 }
 
 /* For laptop-sized screens. Swaps menus */
