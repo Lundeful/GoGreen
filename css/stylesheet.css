@@ -146,9 +146,10 @@ Introduction to app with hero shot and links to app download
   font-size: 2em;
   text-align: center;
   padding: 0.3em;
-  margin: 1.5em;
   margin: auto;
   max-width: 15em;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
 }
 
 .heroImage {
@@ -203,7 +204,9 @@ WALL OF TEXT section
 }
 
 .wallOfText p {
-  margin: 1.5em;
+  font-size: 1.2em;
+
+  margin: 1em;
   max-width: 25em;
 }
 
@@ -345,6 +348,11 @@ MEDIA QUERY BREAK SECTION
 
   #logo {
     margin-left: 7em;
+  }
+
+  .heroSection h2 {
+    margin-top: 2em;
+    margin-bottom: 1em;
   }
 
   .heroText {
