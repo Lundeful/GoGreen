@@ -23,6 +23,7 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Favicon end-->
 
+    <!-- All images are either CC0 licensed or modified CC0 images -->
     <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <link href="css/stylesheet.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -47,10 +48,10 @@
       <div id="navJS" class="nav">
         <a href="javascript:void(0)" id="closeBTN" onclick="closeNav()" onkeypress="openNav()">&times;</a>
         <div class="hoverFarge">
-          <a href="#downloadApp">Download App</a>
-          <a href="#WOT1">Learn More</a>
-          <a href="#infoBoxSection">Features</a>
-          <a href="#contactInfo">Contact us</a>
+          <a href="#downloadApp" onclick="closeNav()">Download App</a>
+          <a href="#WOT1" onclick="closeNav()">Learn More</a>
+          <a href="#infoBoxSection" onclick="closeNav()">Features</a>
+          <a href="#contactInfo" onclick="closeNav()">Contact us</a>
           <a href="#top" onclick="closeNav()" id="topKnapp">Top &uarr;</a>
         </div>
       </div>
@@ -71,56 +72,58 @@
 <!-- THE IN-DEPTH INFO SECTION -->
     <div class="wallOfText" id="WOT1">
       <p><span class="mellomOverskrift">Why did we create this app?</span>
-        Climate change is real. The world is getting warmer, extreme weather events are more intense and frequent, sea levels are rising fast and animals are going extinct. If we are to stop these climate changes and avoid the worst consequences we all need to take action. Aside from making government and corporate entities apply policies to become more eco-friendly the most important step we can take is to make changes in our daily lives and become more environmentally friendly in the way we travel and consume. This sends signals to other people, governments and companies and has a great impact on the world. </br> </br> But changing our habits isn't always easy. So we sought out to create an app that helps you do just that and together we can help make the world greener.
+        Climate change is real. The world is getting warmer, extreme weather events are more intense and frequent, sea levels are rising fast and animals are going extinct. If we are to stop these climate changes and avoid the worst consequences we all
+        need to take action. Aside from making government and corporate entities apply policies to become more eco-friendly the most important step we can take is to make changes in our daily lives and become more environmentally friendly in the way we travel and consume.
+        This sends signals to other people, governments and companies and has a great impact on the world. </br> </br> But changing our habits isn't easy. So we sought out to create an app that helps you do just that and together we can help make the world greener.
       </p>
-      <div class="wallOfTextImage" id="WOTI1"></div>
+      <div class="wallOfTextImage"><img src="media/wot1.jpg"/></div>
     </div>
     <div class="wallOfText" id="WOT2">
       <p><span class="mellomOverskrift">How does the app work?</span>
-        The app works by tracking your habits that have an effect on the environment and then help you change it from a negative to a positive impact. </br></br> You start by adding your routines for travel and consuption to work as a starting point, and then the app will make suggestions on how you can cut down on your emissions. You can log different activities, like taking bus instead of car, and that will count towards your statistics on how much you reduce your carbon footprint. You can check your progress through easy to read graphics and see how great your effort really is. When you reach milestones the app will show you what you've achieved and how it impacts the world.
+        The app works by tracking your habits that have an effect on the environment and then help you change it from a negative to a positive impact. </br></br> You start by adding your routines for travel and consuption to work as a starting point,
+        and then the app will make suggestions on how you can cut down on your emissions. You can log different activities like taking the bus instead of a car and that will count towards your statistics on how much you reduce your carbon footprint.
+         </br></br>You can check your progress through easy to read graphics and see how great your effort really is. We believe this visual feedback is an important motivator for you to do better. When you reach milestones the app will show you what you've achieved and how it impacts the world.
+        These small triumphs can snowball into something greater and can change both your life and the world.
       </p>
-      <div class="wallOfTextImage" id="WOTI2"></div>
-    </div>
-    <div class="wallOfText" id="WOT3">
-      <p><span class="mellomOverskrift">Another headline here</span>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
-      <div class="wallOfTextImage" id="WOTI3"></div>
+      <div class="wallOfTextImage"><img src="media/wot2.jpg"/></div>
     </div>
 <!-- INFOBOXES -->
-    <div id="infoBoxSection">
 
+    <h2 class="infoHeader"> App features </h2>
+    <div id="infoBoxSection">
       <div class="infoBox">
-        <div class="infoBoxTitle"> <h3>See your impact</h3></div>
-        <div class="infoBoxImage" id="seeYourImpact"></div>
-        <p class="infoBoxText">See the actual impact your lifestyle changes have on the world.</p>
+        <div class="infoBoxTitle"> <h3>Know your impact</h3></div>
+        <div class="infoBoxImage"> <img src="media/impact.png"/></div>
+        <p class="infoBoxText"> See the amount of emissions you've saved from being released into the world and and actual scales of your impact.</p>
       </div>
 
       <div class="infoBox">
         <div class="infoBoxTitle"> <h3>Connect with friends</h3> </div>
-        <div class="infoBoxImage" id="connectWithFriends"></div>
+        <div class="infoBoxImage"> <img src="media/connectWithFriends.jpg" alt="Four people standing shoulder to shoulder and looking down at their smartphones"/></div>
         <p class="infoBoxText"> Add your friends and help each other be better and together make a greater impact. You can compare stats and compete to see who's doing best. </p>
       </div>
       <div class="infoBox">
         <div class="infoBoxTitle"> <h3>Track your journey</h3> </div>
-        <div class="infoBoxImage" id="trackYourJourney"></div>
+        <div class="infoBoxImage"><img src="media/progressTracker.png" alt="Graphic with three green circular progress bars at 75%, 50% and 25% completion"/></div>
         <p class="infoBoxText"> Detailed statistics provides an easy to read visual representation of your progress so far.
         </p>
       </div>
       <div class="infoBox">
         <div class="infoBoxTitle"> <h3>Set your goals</h3> </div>
-        <div class="infoBoxImage" id="setYourGoals"></div>
+        <div class="infoBoxImage"> <img src=""/></div>
         <p class="infoBoxText"> For better motivation you can set specific goals and let the app track your progress. You can set notifications for reminders so you don't forget.
         </p>
       </div>
       <div class="infoBox">
         <div class="infoBoxTitle"> <h3>Learn more every day</h3> </div>
-        <div class="infoBoxImage" id="learnEveryDay"></div>
+        <div class="infoBoxImage"> <img src="media/learnMore.png" alt="Drawn image of two hands using the app on a phone and pressing the learn more button"/></div>
         <p class="infoBoxText">
           If you're interested in learning more about climate change the app as a learning section where you can get easy to understand facts that change daily
         </p>
       </div>
       <div class="infoBox">
         <div class="infoBoxTitle"> <h3>Boks 6</h3> </div>
-        <div class="infoBoxImage" id="info6"></div>
+        <div class="infoBoxImage"></div>
         <p class="infoBoxText">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti  quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
       </div>
     </div>
