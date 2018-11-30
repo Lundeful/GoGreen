@@ -17,16 +17,16 @@
   <body>
     <div class="NavBar" id="top">
        <ul>
-         <li class="hamburgerBoks" onclick="openNav()" onkeypress="openNav()">
-          <div class="hamburgerLine" tabindex="0"></div>
+         <li class="hamburgerBoks" onclick="openNav()" onkeypress="openNav()" tabindex="1">
+          <div class="hamburgerLine"></div>
           <div class="hamburgerLine"></div>
           <div class="hamburgerLine"></div>
         </li>
         <li><img id="logo" src="media/gogreen.png" alt="Logo for the Go Green App. A pair of footprints made up of leaves and the name Go Green"></li>
-          <li class="PCNavBar"><a href="#contactInfo">Contact us</a></li>
-          <li class="PCNavBar"><a href="#infoBoxSection">Features</a></li>
-          <li class="PCNavBar"><a href="#WOT1">Learn More</a></li>
-          <li class="PCNavBar"><a href="#downloadApp">Download App</a></li>
+          <li class="PCNavBar"><a href="#contactInfo" tabindex="24">Contact us</a></li>
+          <li class="PCNavBar"><a href="#infoBoxSection" tabindex="23">Features</a></li>
+          <li class="PCNavBar"><a href="#WOT1" tabindex="22">Learn More</a></li>
+          <li class="PCNavBar"><a href="#downloadApp" tabindex="21" >Download App</a></li>
       </ul>
       <div id="navJS" class="nav">
         <a href="javascript:void(0)" id="closeBTN" onclick="closeNav()" onkeypress="openNav()">&times;</a>
@@ -42,61 +42,61 @@
 
 <!-- HERO IMAGE -->
     <div class="heroSection">
-      <h2>Go Green - The app that helps you save the world</h2>
+      <h2 tabindex="50">Go Green - The app that helps you save the world</h2>
       <div class="heroImage">
-        <img class="heroImage" src="media/mate20.png" alt="Image of a smartphone displaying the splash screen of the App with log in buttons">
+        <img class="heroImage" tabindex="51" src="media/mate20.png" alt="Image of a smartphone displaying the splash screen of the App with log in buttons">
       </div>
-      <p class="heroText"> Go Green is an app that helps you change your habits to reduce your carbon footprint and become more eco-friendly in an easy way.
+      <p class="heroText" tabindex="60"> Go Green is an app that helps you change your habits to reduce your carbon footprint and become more eco-friendly in an easy way.
         Visit the app links below to join the cause</p>
       <ul class="storeLinks" id="downloadApp">
-        <li><a href="https://play.google.com/store/apps"><img src="media/playstore.png" alt="Black rounded square button that leads to Google's Play Store"/></a></li>
-        <li><a href="https://www.apple.com/ios/app-store/"><img src="media/appstore.png" alt="Black rounded square button that leads to Apple's App Store"/></a></li>
+        <li><a href="https://play.google.com/store/apps" tabindex="70"><img src="media/playstore.png" alt="Black rounded square button that leads to Google's Play Store"/></a></li>
+        <li><a href="https://www.apple.com/ios/app-store/" tabindex="80"><img src="media/appstore.png" alt="Black rounded square button that leads to Apple's App Store"/></a></li>
       </ul>
     </div>
 
 <!-- THE IN-DEPTH INFO SECTION -->
     <div class="wallOfText" id="WOT1">
-      <p><span class="mellomOverskrift">Why did we create this app?</span>
+      <p tabindex="110"><span class="mellomOverskrift">Why did we create this app?</span>
         Climate change is real. The world is getting warmer, extreme weather events are more intense and frequent, sea levels are rising fast and animals are going extinct. If we are to stop these climate changes and avoid the worst consequences we all
         need to take action. Aside from making government and corporate entities apply policies to become more eco-friendly the most important step we can take is to make changes in our daily lives and become more environmentally friendly in the way we travel and consume.
         This sends signals to other people, governments and companies and has a great impact on the world. </br> </br> But changing our habits isn't easy. So we sought out to create an app that helps you do just that and together we can help make the world greener.
       </p>
-      <div class="wallOfTextImage"><img src="media/wot1.jpg" alt="Landscape picture of Moraine Lake in Canada with partially cloudy skies, snowy mountains, green trees and a lake"/></div>
+      <div class="wallOfTextImage"><img src="media/wot1.jpg" tabindex="111"alt="Landscape picture of Moraine Lake in Canada with partially cloudy skies, snowy mountains, green trees and a lake"/></div>
     </div>
 
     <div class="wallOfText" id="WOT2">
-      <p><span class="mellomOverskrift">How does the app work?</span>
+      <p tabindex="120"><span class="mellomOverskrift">How does the app work?</span>
         The app works by tracking your habits that have an effect on the environment and then help you change it from a negative to a positive impact. </br></br> You start by adding your routines for travel and consuption to work as a starting point,
         and then the app will make suggestions on how you can cut down on your emissions. You can log different activities like taking the bus instead of a car and that will count towards your statistics on how much you reduce your carbon footprint.
          </br></br>You can check your progress through easy to read graphics and see how great your effort really is. We believe this visual feedback is an important motivator for you to do better. When you reach milestones the app will show you what you've achieved and how it impacts the world.
         These small triumphs can snowball into something greater and can change both your life and the world.
       </p>
-      <div class="wallOfTextImage"><img src="media/wot2.jpg" alt="Silhouette image backlit by the sun of two people climbing a small mountain with one helping each other up to the top"/></div>
+      <div class="wallOfTextImage"><img src="media/wot2.jpg" tabindex="121"alt="Silhouette image backlit by the sun of two people climbing a small mountain with one helping each other up to the top"/></div>
     </div>
 
 <!-- INFOBOXES -->
-    <h2 class="infoHeader"> App features </h2>
+    <h2 class="infoHeader" tabindex="130"> App features </h2>
     <div id="infoBoxSection">
-      <div class="infoBox">
+      <div class="infoBox" tabindex="131">
         <div class="infoBoxTitle"> <h3>Get suggestions</h3> </div>
-        <div class="infoBoxImage"><img src="media/suggestions.png" alt="Speech-bubble message from app with tips on how to save emissions"/></div>
+        <div class="infoBoxImage"><img src="media/suggestions.png"alt="Speech-bubble message from app with tips on how to save emissions"/></div>
         <p class="infoBoxText"> No one has the same life so the Go Green app uses the data you put in to give you personalized suggestions on how to do better </p>
       </div>
 
-      <div class="infoBox">
+      <div class="infoBox" tabindex="132">
         <div class="infoBoxTitle"> <h3>Connect with friends</h3> </div>
         <div class="infoBoxImage"> <img src="media/connectWithFriends.jpg" alt="Four people standing shoulder to shoulder and looking down at their smartphones"/></div>
         <p class="infoBoxText"> Add your friends and help each other be better and together make a greater impact. You can compare stats and compete to see who's doing best. </p>
       </div>
 
-      <div class="infoBox">
-        <div class="infoBoxTitle"> <h3>Track your journey</h3> </div>
+      <div class="infoBox" tabindex="133">
+        <div class="infoBoxTitle" > <h3>Track your journey</h3> </div>
         <div class="infoBoxImage"> <img src="media/progressTracker.png" alt="Graphic with three green circular progress bars at 75%, 50% and 25% completion"/></div>
         <p class="infoBoxText"> Detailed statistics provides an easy to read visual representation of your progress so far.
         </p>
       </div>
 
-      <div class="infoBox">
+      <div class="infoBox" tabindex="134">
         <div class="infoBoxTitle"> <h3>Learn more every day</h3> </div>
         <div class="infoBoxImage"> <img src="media/learnMore.png" alt="Drawn image of two hands using the app on a phone and pressing the learn more button"/></div>
         <p class="infoBoxText">
@@ -104,7 +104,7 @@
         </p>
       </div>
 
-      <div class="infoBox">
+      <div class="infoBox" tabindex="135">
         <div class="infoBoxTitle"> <h3>Set your goals</h3> </div>
         <div class="infoBoxImage"> <img src="media/goals.png" alt="Vector image from the app of a list of goals created. Item in the middle says 'Pick the bus over the car 2 times this week'"/></div>
         <p class="infoBoxText"> For better motivation you can set specific goals and let the app track your progress. You can set notifications for reminders so you don't forget.
@@ -112,7 +112,7 @@
       </div>
 
 
-      <div class="infoBox">
+      <div class="infoBox" tabindex="136">
         <div class="infoBoxTitle"> <h3>Know your impact</h3></div>
         <div class="infoBoxImage"> <img src="media/impact.png" alt="Drawn image of elephant accompanied with the text 'You've cut 6.017 kg of Co2. That's more than the weight of an elephant'"/></div>
         <p class="infoBoxText"> See the amount of emissions you've saved from being released into the world and and actual scales of your impact.</p>
@@ -122,14 +122,14 @@
 <!-- FOOTER -->
     <div class="footer">
       <div class="footerContent">
-        <a id="pil" href="#top"> &#8593; </a>
+        <a id="pil" href="#top" tabindex="140"> &#8593; </a>
         <div class="footerLinkText">
-          <a href="#top">To the top</a>
+          <a href="#top" tabindex="141">To the top</a>
           <div class="kontaktOssBoks">
-            <a>Contact us</a>
+            <a tabindex="142">Contact us</a>
           </div>
         </div>
-        <ul id="contactInfo">
+        <ul id="contactInfo" tabindex="150">
           <li style="font-weight: bold"> Go Green Company</li>
           <li> 221 Baker Street </li>
           <li> London</li>
